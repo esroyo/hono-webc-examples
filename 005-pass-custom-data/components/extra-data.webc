@@ -1,0 +1,11 @@
+<h2>Here's my extra data:</h2>
+<table>
+  <tr>
+    <td>foo</td>
+    <td @html="foo"></td>
+  </tr>
+  <tr>
+    <td>xpto</td>
+    <td @html="xpto"></td>
+  </tr>
+</table>

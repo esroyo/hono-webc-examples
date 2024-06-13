@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebC middleware for Hono examples</title>
+    <style>
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article, aside {
+  width: 50vw;
+  height: 100vh;
+  flex-grow: 1;
+}
+
+article {
+  padding: 2vh 2vw;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border-width: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  article, aside {
+    width: 100vw;
+  }
+  iframe {
+    border-width: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <article>
+        <slot></slot>
+    </article>
+    <aside>
+      <iframe :src="source"></iframe>
+    </aside>
+</body>

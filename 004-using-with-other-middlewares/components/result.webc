@@ -1,0 +1,11 @@
+<ul>
+    <script webc:type="js">
+      session.get('guesses')
+        .map((num) =>`<li>${num}</li>`).join("")
+    </script>
+</ul>
+<a href="../">back</a>
+<br />
+<a href="../clear/">clear results</a>
+<!-- see more about render functions here
+https://www.11ty.dev/docs/languages/webc/#javascript-render-functions-webctypejs-and-webctyperender -->

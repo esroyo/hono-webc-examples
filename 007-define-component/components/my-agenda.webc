@@ -1,0 +1,11 @@
+<div class="page">
+  <!-- see https://www.11ty.dev/docs/languages/webc/#webcfor-loops for more examples on how to use webc:for -->
+  <my-card webc:for="friend of friends" :person="friend"></my-card>
+</div>
+
+<style>
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>

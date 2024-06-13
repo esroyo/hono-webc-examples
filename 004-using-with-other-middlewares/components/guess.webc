@@ -1,0 +1,6 @@
+<h1>make your guess</h1>
+<form method="POST" action="./result/">
+    <label>Guess a number</label>
+    <input type="number" name="num" placeholder="1" min="1" required />
+    <input type="submit" />
+</form>

@@ -1,0 +1,16 @@
+<!--- cool huh? --->
+<div class="person">
+  <h1 @html="person?.name"></h1>
+  <p>blah blah</p>
+</div>
+
+<style>
+    .person {
+        border: 1px solid black;
+        border-radius: 1em;
+        min-width: 5em;
+        min-height: 3em;
+        margin: 1em;
+        padding: 1em;
+    }
+</style>

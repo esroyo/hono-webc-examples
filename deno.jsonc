@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0",
+    "name": "@esroyo/hono-webc-examples",
+    "tasks": {
+        "coverage": "rm -rf coverage && deno task test --reporter=dot --coverage=coverage && deno coverage --lcov --output=coverage.lcov coverage && genhtml --ignore-errors range -o coverage/report coverage.lcov",
+        "dev": "deno run --inspect --watch --allow-env --allow-read --allow-net --allow-sys --allow-write main.ts",
+        "fmt": "deno fmt ./",
+        "tag-version": "npx commit-and-tag-version && git push --follow-tags origin main",
+        "test": "deno test --allow-env --allow-read --allow-write --allow-sys"
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "singleQuote": true
+    },
+    "compilerOptions": {
+        "experimentalDecorators": false
+    },
+    "imports": {
+        "@esroyo/hono-webc": "jsr:@esroyo/hono-webc@1.2.1",
+        "@jcs224/hono-sessions": "jsr:@jcs224/hono-sessions@0.5.8",
+        "@hono/hono": "jsr:@hono/hono@4.4.4",
+        "@std/path": "jsr:@std/path@0.225.2",
+    }
+}
