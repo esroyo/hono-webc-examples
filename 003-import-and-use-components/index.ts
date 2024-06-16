@@ -5,7 +5,10 @@ import { buildRelativePath } from '../utils.ts';
 const app = new Hono();
 
 app.use(honoWebc({
-    data: { source: 'https://github.com/esroyo/hono-webc-examples/blob/main/003-import-and-use-components' },
+    data: {
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/003-import-and-use-components',
+    },
     input: 'layout.webc',
 }));
 

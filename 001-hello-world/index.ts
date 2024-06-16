@@ -6,7 +6,10 @@ const app = new Hono();
 app.use(honoWebc({
     defineComponents: '**/components/**/*.webc',
     input: 'layout.webc',
-    data: { source: 'https://github.com/esroyo/hono-webc-examples/blob/main/001-hello-world/' },
+    data: {
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/001-hello-world/',
+    },
 }));
 
 app.get('/', (ctx) => {

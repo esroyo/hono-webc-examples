@@ -2,8 +2,8 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@esroyo/hono-webc@1.2.1": "jsr:@esroyo/hono-webc@1.2.1",
-      "jsr:@esroyo/webc-lax@1.0.5": "jsr:@esroyo/webc-lax@1.0.5",
+      "jsr:@esroyo/hono-webc@1.3.0": "jsr:@esroyo/hono-webc@1.3.0",
+      "jsr:@esroyo/webc-lax@1.1.3": "jsr:@esroyo/webc-lax@1.1.3",
       "jsr:@hono/hono@4.4.4": "jsr:@hono/hono@4.4.4",
       "jsr:@jcs224/hono-sessions@0.5.8": "jsr:@jcs224/hono-sessions@0.5.8",
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
@@ -16,16 +16,16 @@
       "npm:parse5@7.1.2": "npm:parse5@7.1.2"
     },
     "jsr": {
-      "@esroyo/hono-webc@1.2.1": {
-        "integrity": "82136f69ab102ecff50a16d867efb5fbf9e629d56bd33dca4c7435ee68b74cc8",
+      "@esroyo/hono-webc@1.3.0": {
+        "integrity": "fb0ed024a613c61aaba4f7ea4012b62163c5588a4362e56e03dc7ced5805a3d8",
         "dependencies": [
-          "jsr:@esroyo/webc-lax@1.0.5",
+          "jsr:@esroyo/webc-lax@1.1.3",
           "jsr:@hono/hono@4.4.4",
           "npm:lodash-es@4.17.21"
         ]
       },
-      "@esroyo/webc-lax@1.0.5": {
-        "integrity": "24c678c989fadf291022e3be2efdf65f084e187b5042adb7cb6e664a0aaa2106"
+      "@esroyo/webc-lax@1.1.3": {
+        "integrity": "a3c4a3ea040d581adbe855e7b1979092c62aacf95a54adf5f00926164c19d642"
       },
       "@hono/hono@4.4.4": {
         "integrity": "38265f77059877cbee3579c419c561e90d8e8bf6861ce554832018b9998dcc8e"
@@ -250,7 +250,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@esroyo/hono-webc@1.2.1",
+      "jsr:@esroyo/hono-webc@1.3.0",
       "jsr:@hono/hono@4.4.4",
       "jsr:@jcs224/hono-sessions@0.5.8",
       "jsr:@std/path@0.225.2"

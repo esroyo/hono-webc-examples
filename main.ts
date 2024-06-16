@@ -9,11 +9,15 @@ for (const example of examples) {
 
 const homepageApp = new Hono();
 homepageApp.use(honoWebc({
-    data: { source: 'https://github.com/esroyo/hono-webc-examples/blob/main/main.ts' },
+    data: {
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/main.ts',
+    },
     input: 'layout.webc',
 }));
 homepageApp.on('GET', ['/', '/examples'], async (ctx) => {
-    return ctx.render(`
+    return ctx.render(
+        `
 <h1>Hono WebC examples</h1>
 <dl>
   <div webc:for="example of examples">

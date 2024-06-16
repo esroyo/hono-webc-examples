@@ -15,13 +15,16 @@ app.use(honoWebc({
             { name: 'Phoebe' },
             { name: 'Ross' },
         ],
-        source: 'https://github.com/esroyo/hono-webc-examples/blob/main/007-define-components',
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/007-define-components',
     },
     input: 'layout.webc',
 }));
 
 app.get('/', (ctx) => {
-    return ctx.render(buildRelativePath(import.meta.url, 'components/my-agenda.webc'));
+    return ctx.render(
+        buildRelativePath(import.meta.url, 'components/my-agenda.webc'),
+    );
 });
 
 export default {

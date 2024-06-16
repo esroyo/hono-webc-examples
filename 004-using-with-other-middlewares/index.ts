@@ -23,12 +23,17 @@ app.use(sessionMiddleware({
 }));
 
 app.use(honoWebc({
-    data: { source: 'https://github.com/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares' },
+    data: {
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares',
+    },
     input: 'layout.webc',
 }));
 
 app.get('/', (ctx) => {
-    return ctx.render(buildRelativePath(import.meta.url, 'components/guess.webc'));
+    return ctx.render(
+        buildRelativePath(import.meta.url, 'components/guess.webc'),
+    );
 });
 
 app.post('/result/', async (ctx) => {
@@ -38,7 +43,9 @@ app.post('/result/', async (ctx) => {
         session.set('guesses', []);
     }
     session.get('guesses').push(body['num']);
-    return ctx.render(buildRelativePath(import.meta.url, 'components/result.webc'));
+    return ctx.render(
+        buildRelativePath(import.meta.url, 'components/result.webc'),
+    );
 });
 
 app.get('/clear/', async (ctx) => {

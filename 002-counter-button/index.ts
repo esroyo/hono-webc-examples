@@ -5,7 +5,10 @@ const app = new Hono();
 
 app.use(honoWebc({
     defineComponents: '**/components/**/*.webc',
-    data: { source: 'https://github.com/esroyo/hono-webc-examples/blob/main/002-counter-button' },
+    data: {
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/002-counter-button',
+    },
     input: 'layout.webc',
 }));
 
@@ -18,6 +21,6 @@ app.get('/', (ctx) => {
 export default {
     app,
     desc:
-        'Sampling how WebC scopes styles, scripts and provides a uid attribute to keep unique id\'s inside a component',
+        "Sampling how WebC scopes styles, scripts and provides a uid attribute to keep unique id's inside a component",
     route: '/my-counter',
 };

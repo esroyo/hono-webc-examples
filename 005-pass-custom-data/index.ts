@@ -6,14 +6,16 @@ const app = new Hono();
 
 app.use(honoWebc({
     data: {
-        source: 'https://github.com/esroyo/hono-webc-examples/blob/main/005-pass-custom-data',
+        source:
+            'https://github.com/esroyo/hono-webc-examples/blob/main/005-pass-custom-data',
         xpto: 'buzz',
     },
     input: 'layout.webc',
 }));
 
 app.get('/', (ctx) => {
-    return ctx.render(buildRelativePath(import.meta.url, '/components/extra-data.webc'),
+    return ctx.render(
+        buildRelativePath(import.meta.url, '/components/extra-data.webc'),
         {
             foo: 'bar',
             xpto: 'woof',
