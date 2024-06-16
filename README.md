@@ -1,6 +1,8 @@
-# hono-webc-examples
+# WebC middleware for Hono - Examples
 
-Samples of [hono-webc middleware](https://github.com/esroyo/hono-webc)
+This repo contains examples of using [WebC middleware for Hono](https://github.com/esroyo/hono-webc).
+
+**Visit the [live demo site 🌍](https://hono-webc-examples.deno.dev)**
 
 ## [001-hello-world](001-hello-world)
 
