@@ -7,7 +7,7 @@ const app = new Hono();
 app.use(honoWebc({
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/005-pass-custom-data',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/005-pass-custom-data',
         xpto: 'buzz',
     },
     input: 'layout.webc',

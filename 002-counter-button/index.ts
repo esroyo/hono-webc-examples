@@ -7,7 +7,7 @@ app.use(honoWebc({
     defineComponents: '**/components/**/*.webc',
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/002-counter-button',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/002-counter-button',
     },
     input: 'layout.webc',
 }));

@@ -11,7 +11,7 @@ const homepageApp = new Hono();
 homepageApp.use(honoWebc({
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/main.ts',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/main.ts',
     },
     input: 'layout.webc',
 }));

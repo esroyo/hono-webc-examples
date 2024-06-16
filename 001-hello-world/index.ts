@@ -8,7 +8,7 @@ app.use(honoWebc({
     input: 'layout.webc',
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/001-hello-world/',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/001-hello-world/',
     },
 }));
 

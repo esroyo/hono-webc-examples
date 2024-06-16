@@ -25,7 +25,7 @@ app.use(sessionMiddleware({
 app.use(honoWebc({
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares',
     },
     input: 'layout.webc',
 }));

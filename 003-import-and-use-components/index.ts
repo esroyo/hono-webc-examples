@@ -7,7 +7,7 @@ const app = new Hono();
 app.use(honoWebc({
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/003-import-and-use-components',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/003-import-and-use-components',
     },
     input: 'layout.webc',
 }));

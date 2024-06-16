@@ -7,7 +7,7 @@ const app = new Hono();
 app.use(honoWebc({
     data: {
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/006-webc-for-loops',
+            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/006-webc-for-loops',
     },
     input: 'layout.webc',
 }));
