@@ -16,7 +16,7 @@ app.use(honoWebc({
             { name: 'Ross' },
         ],
         source:
-            'https://github.com/esroyo/hono-webc-examples/blob/main/007-define-components',
+            'https://github.com/esroyo/hono-webc-examples/blob/main/007-define-component',
     },
     input: 'layout.webc',
 }));
