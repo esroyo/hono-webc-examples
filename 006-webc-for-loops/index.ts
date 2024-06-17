@@ -1,13 +1,13 @@
 import { Hono } from '@hono/hono';
-import { honoWebc } from '@esroyo/hono-webc';
+import { createWebcMiddleware } from '@esroyo/hono-webc';
 import { buildRelativePath } from '../utils.ts';
 
 const app = new Hono();
 
-app.use(honoWebc({
+app.use(createWebcMiddleware({
     data: {
         source:
-            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/006-webc-for-loops',
+            'https://github-embed.deno.dev/esroyo/hono-webc-examples/blob/main/006-webc-for-loops',
     },
     input: 'layout.webc',
 }));

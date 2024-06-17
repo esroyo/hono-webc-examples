@@ -1,5 +1,5 @@
 import { Hono } from '@hono/hono';
-import { honoWebc } from '@esroyo/hono-webc';
+import { createWebcMiddleware } from '@esroyo/hono-webc';
 import examples from './index.ts';
 
 const examplesApp = new Hono().basePath('/examples');
@@ -8,10 +8,10 @@ for (const example of examples) {
 }
 
 const homepageApp = new Hono();
-homepageApp.use(honoWebc({
+homepageApp.use(createWebcMiddleware({
     data: {
         source:
-            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/main.ts',
+            'https://github-embed.deno.dev/esroyo/hono-webc-examples/blob/main/main.ts',
     },
     input: 'layout.webc',
 }));

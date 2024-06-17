@@ -22,7 +22,7 @@ body {
 }
 
 article, aside {
-  width: 50vw;
+  width: 49vw;
   height: 100vh;
   flex-grow: 1;
 }

@@ -1,13 +1,13 @@
 import { Hono } from '@hono/hono';
-import { honoWebc } from '@esroyo/hono-webc';
+import { createWebcMiddleware } from '@esroyo/hono-webc';
 
 const app = new Hono();
 
-app.use(honoWebc({
+app.use(createWebcMiddleware({
     defineComponents: '**/components/**/*.webc',
     data: {
         source:
-            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/002-counter-button',
+            'https://github-embed.deno.dev/esroyo/hono-webc-examples/blob/main/002-counter-button',
     },
     input: 'layout.webc',
 }));

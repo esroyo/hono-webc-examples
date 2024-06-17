@@ -1,5 +1,5 @@
 import { Hono } from '@hono/hono';
-import { honoWebc } from '@esroyo/hono-webc';
+import { createWebcMiddleware } from '@esroyo/hono-webc';
 import { CookieStore, Session, sessionMiddleware } from '@jcs224/hono-sessions';
 import { buildRelativePath } from '../utils.ts';
 
@@ -22,10 +22,10 @@ app.use(sessionMiddleware({
     },
 }));
 
-app.use(honoWebc({
+app.use(createWebcMiddleware({
     data: {
         source:
-            'https://github-forward.deno.dev/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares',
+            'https://github-embed.deno.dev/esroyo/hono-webc-examples/blob/main/004-using-with-other-middlewares',
     },
     input: 'layout.webc',
 }));
