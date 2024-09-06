@@ -1,256 +1,62 @@
 {
-  "version": "3",
-  "packages": {
-    "specifiers": {
-      "jsr:@esroyo/hono-webc@1.3.0": "jsr:@esroyo/hono-webc@1.3.0",
-      "jsr:@esroyo/webc-lax@1.1.3": "jsr:@esroyo/webc-lax@1.1.3",
-      "jsr:@hono/hono@4.4.4": "jsr:@hono/hono@4.4.4",
-      "jsr:@jcs224/hono-sessions@0.5.8": "jsr:@jcs224/hono-sessions@0.5.8",
-      "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
-      "jsr:@std/path": "jsr:@std/path@0.225.2",
-      "jsr:@std/path@0.225.2": "jsr:@std/path@0.225.2",
-      "npm:@11ty/webc@0.11.2": "npm:@11ty/webc@0.11.2",
-      "npm:hono@^4.0.0": "npm:hono@4.4.4",
-      "npm:iron-webcrypto@0.10.1": "npm:iron-webcrypto@0.10.1",
-      "npm:lodash-es@4.17.21": "npm:lodash-es@4.17.21",
-      "npm:parse5@7.1.2": "npm:parse5@7.1.2"
+  "version": "4",
+  "specifiers": {
+    "jsr:@esroyo/hono-webc@2.0.3": "jsr:@esroyo/hono-webc@2.0.3",
+    "jsr:@esroyo/webc-lax@1.1.5": "jsr:@esroyo/webc-lax@1.1.5",
+    "jsr:@hono/hono@4.4.4": "jsr:@hono/hono@4.4.4",
+    "jsr:@jcs224/hono-sessions@0.5.8": "jsr:@jcs224/hono-sessions@0.5.8",
+    "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
+    "jsr:@std/path@0.225.2": "jsr:@std/path@0.225.2",
+    "npm:hono@^4.0.0": "npm:hono@4.4.6",
+    "npm:iron-webcrypto@0.10.1": "npm:iron-webcrypto@0.10.1",
+    "npm:lodash-es@4.17.21": "npm:lodash-es@4.17.21"
+  },
+  "jsr": {
+    "@esroyo/hono-webc@2.0.3": {
+      "integrity": "794d39fd189cea8c85bd0a538d12952c9ebb78ef1d4e838f16194630ea9d71f2",
+      "dependencies": [
+        "jsr:@esroyo/webc-lax",
+        "jsr:@hono/hono",
+        "npm:lodash-es"
+      ]
     },
-    "jsr": {
-      "@esroyo/hono-webc@1.3.0": {
-        "integrity": "fb0ed024a613c61aaba4f7ea4012b62163c5588a4362e56e03dc7ced5805a3d8",
-        "dependencies": [
-          "jsr:@esroyo/webc-lax@1.1.3",
-          "jsr:@hono/hono@4.4.4",
-          "npm:lodash-es@4.17.21"
-        ]
-      },
-      "@esroyo/webc-lax@1.1.3": {
-        "integrity": "a3c4a3ea040d581adbe855e7b1979092c62aacf95a54adf5f00926164c19d642"
-      },
-      "@hono/hono@4.4.4": {
-        "integrity": "38265f77059877cbee3579c419c561e90d8e8bf6861ce554832018b9998dcc8e"
-      },
-      "@jcs224/hono-sessions@0.5.8": {
-        "integrity": "19458dad347ba021396b840cb50c05bb097ab621800f05f80409f6889c06a9dc",
-        "dependencies": [
-          "npm:hono@^4.0.0",
-          "npm:iron-webcrypto@0.10.1"
-        ]
-      },
-      "@std/assert@0.226.0": {
-        "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3"
-      },
-      "@std/path@0.225.2": {
-        "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
-        "dependencies": [
-          "jsr:@std/assert@^0.226.0"
-        ]
-      }
+    "@esroyo/webc-lax@1.1.5": {
+      "integrity": "1b8cacb4e147fdafda67e9edec437db1b891a0e31851c6778249140b7754bb61"
     },
-    "npm": {
-      "@11ty/eleventy-utils@1.0.2": {
-        "integrity": "sha512-Zy2leMK1DQR6Q6ZPSagv7QpJaAz9uVbb+RmVetYFp3foMeQtOSZx7w2u5daRFmP+PeNq9vO9H4xtBToYFWZwHA==",
-        "dependencies": {
-          "normalize-path": "normalize-path@3.0.0"
-        }
-      },
-      "@11ty/webc@0.11.2": {
-        "integrity": "sha512-LPfbhtE61wp+ilqvL78WYaoz9lWSh7tZ/Carb+Uzm26P7lXBdmGtzpAUO/qNJl9ofwmQSwM2LR1j+k/AoMwx8g==",
-        "dependencies": {
-          "@11ty/eleventy-utils": "@11ty/eleventy-utils@1.0.2",
-          "css-tree": "css-tree@2.3.1",
-          "dependency-graph": "dependency-graph@0.11.0",
-          "entities": "entities@4.5.0",
-          "fast-glob": "fast-glob@3.3.2",
-          "is-glob": "is-glob@4.0.3",
-          "nanoid": "nanoid@4.0.2",
-          "node-retrieve-globals": "node-retrieve-globals@2.0.8",
-          "parse5": "parse5@7.1.2"
-        }
-      },
-      "@nodelib/fs.scandir@2.1.5": {
-        "integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",
-        "dependencies": {
-          "@nodelib/fs.stat": "@nodelib/fs.stat@2.0.5",
-          "run-parallel": "run-parallel@1.2.0"
-        }
-      },
-      "@nodelib/fs.stat@2.0.5": {
-        "integrity": "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==",
-        "dependencies": {}
-      },
-      "@nodelib/fs.walk@1.2.8": {
-        "integrity": "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==",
-        "dependencies": {
-          "@nodelib/fs.scandir": "@nodelib/fs.scandir@2.1.5",
-          "fastq": "fastq@1.17.1"
-        }
-      },
-      "acorn-walk@8.3.2": {
-        "integrity": "sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==",
-        "dependencies": {}
-      },
-      "acorn@8.11.3": {
-        "integrity": "sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==",
-        "dependencies": {}
-      },
-      "braces@3.0.3": {
-        "integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
-        "dependencies": {
-          "fill-range": "fill-range@7.1.1"
-        }
-      },
-      "css-tree@2.3.1": {
-        "integrity": "sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==",
-        "dependencies": {
-          "mdn-data": "mdn-data@2.0.30",
-          "source-map-js": "source-map-js@1.2.0"
-        }
-      },
-      "dependency-graph@0.11.0": {
-        "integrity": "sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==",
-        "dependencies": {}
-      },
-      "entities@4.5.0": {
-        "integrity": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==",
-        "dependencies": {}
-      },
-      "fast-glob@3.3.2": {
-        "integrity": "sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==",
-        "dependencies": {
-          "@nodelib/fs.stat": "@nodelib/fs.stat@2.0.5",
-          "@nodelib/fs.walk": "@nodelib/fs.walk@1.2.8",
-          "glob-parent": "glob-parent@5.1.2",
-          "merge2": "merge2@1.4.1",
-          "micromatch": "micromatch@4.0.7"
-        }
-      },
-      "fastq@1.17.1": {
-        "integrity": "sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==",
-        "dependencies": {
-          "reusify": "reusify@1.0.4"
-        }
-      },
-      "fill-range@7.1.1": {
-        "integrity": "sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==",
-        "dependencies": {
-          "to-regex-range": "to-regex-range@5.0.1"
-        }
-      },
-      "glob-parent@5.1.2": {
-        "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
-        "dependencies": {
-          "is-glob": "is-glob@4.0.3"
-        }
-      },
-      "hono@4.4.4": {
-        "integrity": "sha512-zO5+4K8yf1iuKhBZhwmpZ/0LzPMr8Zt1RugEGM1xvOqgh9DyLb7tslOtoBks4bmm5bIcLtzLCXUpYpXOkwpABA==",
-        "dependencies": {}
-      },
-      "iron-webcrypto@0.10.1": {
-        "integrity": "sha512-QGOS8MRMnj/UiOa+aMIgfyHcvkhqNUsUxb1XzskENvbo+rEfp6TOwqd1KPuDzXC4OnGHcMSVxDGRoilqB8ViqA==",
-        "dependencies": {}
-      },
-      "is-extglob@2.1.1": {
-        "integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",
-        "dependencies": {}
-      },
-      "is-glob@4.0.3": {
-        "integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",
-        "dependencies": {
-          "is-extglob": "is-extglob@2.1.1"
-        }
-      },
-      "is-number@7.0.0": {
-        "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
-        "dependencies": {}
-      },
-      "lodash-es@4.17.21": {
-        "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==",
-        "dependencies": {}
-      },
-      "mdn-data@2.0.30": {
-        "integrity": "sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==",
-        "dependencies": {}
-      },
-      "merge2@1.4.1": {
-        "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==",
-        "dependencies": {}
-      },
-      "micromatch@4.0.7": {
-        "integrity": "sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==",
-        "dependencies": {
-          "braces": "braces@3.0.3",
-          "picomatch": "picomatch@2.3.1"
-        }
-      },
-      "nanoid@4.0.2": {
-        "integrity": "sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==",
-        "dependencies": {}
-      },
-      "node-retrieve-globals@2.0.8": {
-        "integrity": "sha512-mVimS/m8H28kyMdvOIfyMCM8wFNiKXM83ag1yHYP297iVmlCSmCh7Ih4b+ig9/DZ2+LbXZCPLDSZO4yRa5ttyg==",
-        "dependencies": {
-          "acorn": "acorn@8.11.3",
-          "acorn-walk": "acorn-walk@8.3.2"
-        }
-      },
-      "normalize-path@3.0.0": {
-        "integrity": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==",
-        "dependencies": {}
-      },
-      "parse5@7.1.2": {
-        "integrity": "sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==",
-        "dependencies": {
-          "entities": "entities@4.5.0"
-        }
-      },
-      "picomatch@2.3.1": {
-        "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",
-        "dependencies": {}
-      },
-      "queue-microtask@1.2.3": {
-        "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==",
-        "dependencies": {}
-      },
-      "reusify@1.0.4": {
-        "integrity": "sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==",
-        "dependencies": {}
-      },
-      "run-parallel@1.2.0": {
-        "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
-        "dependencies": {
-          "queue-microtask": "queue-microtask@1.2.3"
-        }
-      },
-      "source-map-js@1.2.0": {
-        "integrity": "sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==",
-        "dependencies": {}
-      },
-      "to-regex-range@5.0.1": {
-        "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",
-        "dependencies": {
-          "is-number": "is-number@7.0.0"
-        }
-      }
+    "@hono/hono@4.4.4": {
+      "integrity": "38265f77059877cbee3579c419c561e90d8e8bf6861ce554832018b9998dcc8e"
+    },
+    "@jcs224/hono-sessions@0.5.8": {
+      "integrity": "19458dad347ba021396b840cb50c05bb097ab621800f05f80409f6889c06a9dc",
+      "dependencies": [
+        "npm:hono",
+        "npm:iron-webcrypto"
+      ]
+    },
+    "@std/assert@0.226.0": {
+      "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3"
+    },
+    "@std/path@0.225.2": {
+      "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
+      "dependencies": [
+        "jsr:@std/assert"
+      ]
     }
   },
-  "remote": {
-    "https://deno.land/std@0.188.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
-    "https://deno.land/std@0.188.0/_util/os.ts": "d932f56d41e4f6a6093d56044e29ce637f8dcc43c5a90af43504a889cf1775e3",
-    "https://deno.land/std@0.188.0/path/_constants.ts": "e49961f6f4f48039c0dfed3c3f93e963ca3d92791c9d478ac5b43183413136e0",
-    "https://deno.land/std@0.188.0/path/_interface.ts": "6471159dfbbc357e03882c2266d21ef9afdb1e4aa771b0545e90db58a0ba314b",
-    "https://deno.land/std@0.188.0/path/_util.ts": "d7abb1e0dea065f427b89156e28cdeb32b045870acdf865833ba808a73b576d0",
-    "https://deno.land/std@0.188.0/path/common.ts": "ee7505ab01fd22de3963b64e46cff31f40de34f9f8de1fff6a1bd2fe79380000",
-    "https://deno.land/std@0.188.0/path/glob.ts": "d479e0a695621c94d3fd7fe7abd4f9499caf32a8de13f25073451c6ef420a4e1",
-    "https://deno.land/std@0.188.0/path/mod.ts": "ee161baec5ded6510ee1d1fb6a75a0f5e4b41f3f3301c92c716ecbdf7dae910d",
-    "https://deno.land/std@0.188.0/path/posix.ts": "8b7c67ac338714b30c816079303d0285dd24af6b284f7ad63da5b27372a2c94d",
-    "https://deno.land/std@0.188.0/path/separator.ts": "0fb679739d0d1d7bf45b68dacfb4ec7563597a902edbaf3c59b50d5bcadd93b1",
-    "https://deno.land/std@0.188.0/path/win32.ts": "d186344e5583bcbf8b18af416d13d82b35a317116e6460a5a3953508c3de5bba"
+  "npm": {
+    "hono@4.4.6": {
+      "integrity": "sha512-XGRnoH8WONv60+PPvP9Sn067A9r/8JdHDJ5bgon0DVEHeR1cJPkWjv2aT+DBfMH9/mEkYa1+VEVFp1DT1lIwjw=="
+    },
+    "iron-webcrypto@0.10.1": {
+      "integrity": "sha512-QGOS8MRMnj/UiOa+aMIgfyHcvkhqNUsUxb1XzskENvbo+rEfp6TOwqd1KPuDzXC4OnGHcMSVxDGRoilqB8ViqA=="
+    },
+    "lodash-es@4.17.21": {
+      "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="
+    }
   },
   "workspace": {
     "dependencies": [
-      "jsr:@esroyo/hono-webc@1.3.0",
+      "jsr:@esroyo/hono-webc@2.0.3",
       "jsr:@hono/hono@4.4.4",
       "jsr:@jcs224/hono-sessions@0.5.8",
       "jsr:@std/path@0.225.2"
